@@ -7,7 +7,7 @@
       v-model="formData.title"
       :hide-details="true"
     ></v-text-field>
-    <small class="p-2 text-red" v-for="error in v$.text.$errors" :key="error.$uid">
+    <small class="p-2 text-red" v-for="error in v$.title.$errors" :key="error.$uid">
       {{ error.$message }}</small
     >
 
