@@ -88,7 +88,7 @@ const createToDo = async () => {
     formData.title = ''
     formData.deadline = moment().format('YYYY-MM-DD HH:mm')
     emits('closeForm')
-    // need to reset v$ dirty state, othervise it will validate empty form and got errors
+    // need to reset v$ dirty state, otherwise it will validate empty form and got errors
     v$.value.$reset()
   }
 }
